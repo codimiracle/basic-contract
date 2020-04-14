@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48816ff4-96e9-4b30-84d7-417a66b93429" name="Default Changelist" comment="" />
+    <list default="true" id="48816ff4-96e9-4b30-84d7-417a66b93429" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    </list>
+    <list id="544c77ee-83a4-4fb9-84a8-74623f527295" name="rename to basic-contract" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/datalayer-contract-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/response-contract-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/response-contract-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.codimiracle.web.response.contract.ApiResponseTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.codimiracle.web.response.contract.FilterTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.codimiracle.web.response.contract.PageSliceTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.codimiracle.web.response.contract.PageTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.codimiracle.web.response.contract.SorterTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.codimiracle.web.response.contract.ApiResponseTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.codimiracle.web.response.contract.FilterTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.codimiracle.web.response.contract.PageSliceTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.codimiracle.web.response.contract.PageTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.codimiracle.web.response.contract.SorterTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/response-contract.iml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-contract.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="154" />
+    <option name="myElementSize" value="153" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -16,6 +44,18 @@
         <option value="JUnit5 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/compiler.xml">
+      <ranges>
+        <range start1="4" end1="4" start2="4" end2="5" changelist="544c77ee-83a4-4fb9-84a8-74623f527295" />
+        <range start1="10" end1="10" start2="11" end2="12" changelist="48816ff4-96e9-4b30-84d7-417a66b93429" />
+        <range start1="15" end1="15" start2="17" end2="18" changelist="48816ff4-96e9-4b30-84d7-417a66b93429" />
+      </ranges>
+    </file>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -25,6 +65,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1aRtsUzCHdGnkcpGDI0aim75P09" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -47,6 +88,7 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projecting\basic-contract" />
       <recent name="D:\Projecting\datalayer-contract\src\main\java\com\codimiracle\web\datalayer\contract" />
     </key>
   </component>
@@ -107,12 +149,24 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="48816ff4-96e9-4b30-84d7-417a66b93429" name="Default Changelist" comment="" />
+      <changelist id="544c77ee-83a4-4fb9-84a8-74623f527295" name="rename to basic-contract" comment="" />
       <created>1586710441020</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586710441020</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="2" key="#Project_Structure" timestamp="1586711473507">
@@ -123,22 +177,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="90" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1586710765253" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1586713458999">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1586713508837">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586713458999" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1586713458999">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586713508837" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1586713508837">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586713458999" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1586713458999">
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586713508837" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1586713508837">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586713458999" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1586713458999">
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586713508837" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1586713508837">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586713458999" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586713508837" />
     <state x="221" y="78" key="IDE.errors.dialog" timestamp="1586712664593">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -147,6 +201,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1586711570099" />
+    <state x="488" y="262" key="VCS.ChangelistChooser" timestamp="1586831513558">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="488" y="262" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1586831513558" />
+    <state x="337" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1586766939054">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="337" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1586766939054" />
     <state x="315" y="61" width="517" height="554" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586712699294">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -158,6 +220,6 @@
     <SUITE FILE_PATH="coverage/response_contract$All_in_response_contract__4_.ic" NAME="All in response-contract (4) Coverage Results" MODIFIED="1586712786444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/response_contract$All_in_response_contract__5_.ic" NAME="All in response-contract (5) Coverage Results" MODIFIED="1586713458958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/response_contract$All_in_response_contract__2_.ic" NAME="All in response-contract (2) Coverage Results" MODIFIED="1586712597544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/response_contract$All_in_response_contract__1_.ic" NAME="All in response-contract (1) Coverage Results" MODIFIED="1586712297147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/response_contract$All_in_response_contract__1_.ic" NAME="All in response-contract (1) Coverage Results" MODIFIED="1586713493168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
