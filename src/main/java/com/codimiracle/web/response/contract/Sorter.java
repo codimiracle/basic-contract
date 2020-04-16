@@ -2,7 +2,7 @@ package com.codimiracle.web.response.contract;
 /*
  * MIT License
  *
- * Copyright (c) 2020 Codimiracle
+ * Copyright (c) 2020 codimiracle
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,15 +22,18 @@ package com.codimiracle.web.response.contract;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Optional;
 
 /**
- * Sorter class
+ * sorting record
+ *
  * @author Codimiracle
  */
+@EqualsAndHashCode
 public class Sorter {
     public static final String ORDER_DESCEND = "descend";
     public static final String ORDER_ASCEND = "ascend";

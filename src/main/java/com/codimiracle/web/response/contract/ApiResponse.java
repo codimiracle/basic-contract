@@ -2,7 +2,7 @@ package com.codimiracle.web.response.contract;
 /*
  * MIT License
  *
- * Copyright (c) 2020 Codimiracle
+ * Copyright (c) 2020 codimiracle
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -26,6 +26,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
+ * a unified response format for controller return
+ *
  * @author Codimiracle
  */
 @Data

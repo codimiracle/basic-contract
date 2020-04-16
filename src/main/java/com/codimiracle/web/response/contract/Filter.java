@@ -2,7 +2,7 @@ package com.codimiracle.web.response.contract;
 /*
  * MIT License
  *
- * Copyright (c) 2020 Codimiracle
+ * Copyright (c) 2020 codimiracle
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,10 +22,11 @@ package com.codimiracle.web.response.contract;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-
 import java.util.HashMap;
 
 /**
+ * filter record in database
+ *
  * @author Codimiracle
  */
 public class Filter extends HashMap<String, String[]> {

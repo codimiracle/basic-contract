@@ -1,4 +1,4 @@
-package com.codimiracle.web.response.contract;
+package com.codimiracle.web.response.contract.converter;
 /*
  * MIT License
  *
@@ -22,34 +22,30 @@ package com.codimiracle.web.response.contract;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.codimiracle.web.response.contract.Filter;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.boot.context.properties.ConfigurationPropertiesBinding;
+import org.springframework.core.convert.converter.Converter;
+import org.springframework.stereotype.Component;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class PageSliceTest {
-
-    @Test
-    void testCreatePageSlice() {
-        List<String> list = new ArrayList<String>();
-        list.add("A");
-        list.add("B");
-        list.add("C");
-        PageSlice<String> slice = new PageSlice<>(list);
-        assertEquals(list.size(), slice.getLimit());
-        assertEquals(list, slice.getList());
-        assertEquals(1, slice.getPage());
-        assertEquals(list.size(), slice.getTotal());
-    }
-
-    @Test
-    void testCreatePageSliceEmpty() {
-        PageSlice<String> slice = new PageSlice<>();
-        assertNotNull(slice.getList());
-        assertEquals(1, slice.getPage());
-        assertEquals(0, slice.getTotal());
-        assertEquals(10, slice.getLimit());
+/**
+ * convert String to {@link Filter}
+ *
+ * @author codimiracle
+ */
+@Component
+@ConfigurationPropertiesBinding
+public class FilterConverter implements Converter<String, Filter> {
+    @Override
+    public Filter convert(String source) {
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            return mapper.readValue(source, Filter.class);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
