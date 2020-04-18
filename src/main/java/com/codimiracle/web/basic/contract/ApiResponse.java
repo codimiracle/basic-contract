@@ -1,4 +1,4 @@
-package com.codimiracle.web.response.contract;
+package com.codimiracle.web.basic.contract;
 /*
  * MIT License
  *
@@ -22,17 +22,27 @@ package com.codimiracle.web.response.contract;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-import org.junit.jupiter.api.Test;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-
-class ApiResponseTest {
-    @Test
-    void testCreateApiResponse() {
-        ApiResponse apiResponse = new ApiResponse<>(101, "hello", "world");
-        assertEquals(101, apiResponse.getCode());
-        assertEquals("hello", apiResponse.getMessage());
-        assertEquals("world", apiResponse.getData());
-    }
+/**
+ * a unified response format for controller return
+ *
+ * @author Codimiracle
+ */
+@Data
+@AllArgsConstructor
+public class ApiResponse<T> {
+    /**
+     * mapping module error to code
+     */
+    private Integer code;
+    /**
+     * message for invoking api
+     */
+    private String message;
+    /**
+     * response data
+     */
+    private T data;
 }

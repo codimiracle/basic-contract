@@ -1,4 +1,4 @@
-package com.codimiracle.web.response.contract;
+package com.codimiracle.web.basic.contract;
 /*
  * MIT License
  *
@@ -24,25 +24,22 @@ package com.codimiracle.web.response.contract;
  */
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
- * a unified response format for controller return
- *
- * @author Codimiracle
+ * represent a page of list
  */
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
-public class ApiResponse<T> {
-    /**
-     * mapping module error to code
-     */
-    private Integer code;
-    /**
-     * message for invoking api
-     */
-    private String message;
-    /**
-     * response data
-     */
-    private T data;
+public class Page {
+    private int page = 1;
+    private int limit = 10;
+
+    public int getOffset() {
+        if (page < 1) {
+            page = 1;
+        }
+        return limit * (page - 1);
+    }
 }

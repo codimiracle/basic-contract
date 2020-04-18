@@ -1,4 +1,4 @@
-package com.codimiracle.web.response.contract;
+package com.codimiracle.web.basic.contract.converter;
 /*
  * MIT License
  *
@@ -22,45 +22,30 @@ package com.codimiracle.web.response.contract;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
 
-import java.util.Optional;
+import com.codimiracle.web.basic.contract.Sorter;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.boot.context.properties.ConfigurationPropertiesBinding;
+import org.springframework.core.convert.converter.Converter;
+import org.springframework.stereotype.Component;
 
 /**
- * sorting record
+ * convert String to {@link Sorter}
  *
- * @author Codimiracle
+ * @author codimiracle
  */
-@EqualsAndHashCode
-public class Sorter {
-    public static final String ORDER_DESCEND = "descend";
-    public static final String ORDER_ASCEND = "ascend";
-    /**
-     * entity field name
-     */
-    @Setter
-    private String field;
-
-    /**
-     * descend or ascend order
-     */
-    @Getter
-    private String order;
-
-    /**
-     * convert camel case to underline naming style for database
-     */
-    public String getField() {
-        return Optional.ofNullable(this.field).map((s) -> s.replaceAll("([A-Z])", "_$1").toLowerCase()).orElse(null);
-    }
-
-    public void setOrder(String order) {
-        if (ORDER_DESCEND.equals(order) || ORDER_ASCEND.equals(order)) {
-            this.order = order;
-            return;
+@Component
+@ConfigurationPropertiesBinding
+public class SorterConverter implements Converter<String, Sorter> {
+    @Override
+    public Sorter convert(String source) {
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            return mapper.readValue(source, Sorter.class);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+            return null;
         }
-        throw new RuntimeException("order value must be descend or ascend");
     }
 }

@@ -1,4 +1,4 @@
-package com.codimiracle.web.response.contract;
+package com.codimiracle.web.basic.contract;
 /*
  * MIT License
  *
@@ -22,35 +22,45 @@ package com.codimiracle.web.response.contract;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-import org.junit.jupiter.api.Test;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.Optional;
 
-class PageTest {
+/**
+ * sorting record
+ *
+ * @author Codimiracle
+ */
+@EqualsAndHashCode
+public class Sorter {
+    public static final String ORDER_DESCEND = "descend";
+    public static final String ORDER_ASCEND = "ascend";
+    /**
+     * entity field name
+     */
+    @Setter
+    private String field;
 
-    @Test
-    void getOffsetWithPageZero() {
-        Page page = new Page();
-        page.setPage(0);
-        page.setLimit(10);
-        assertEquals(0, page.getOffset());
+    /**
+     * descend or ascend order
+     */
+    @Getter
+    private String order;
+
+    /**
+     * convert camel case to underline naming style for database
+     */
+    public String getField() {
+        return Optional.ofNullable(this.field).map((s) -> s.replaceAll("([A-Z])", "_$1").toLowerCase()).orElse(null);
     }
 
-    @Test
-    void getOffsetWithNegativeNumber() {
-        Page page = new Page();
-        page.setPage(-1);
-        page.setLimit(10);
-        assertEquals(0, page.getOffset());
-    }
-
-    @Test
-    void getOffsetWithPositiveNumber() {
-        Page page = new Page();
-        page.setPage(1);
-        page.setLimit(10);
-        assertEquals(0, page.getOffset());
-        page.setPage(2);
-        assertEquals(10, page.getOffset());
+    public void setOrder(String order) {
+        if (ORDER_DESCEND.equals(order) || ORDER_ASCEND.equals(order)) {
+            this.order = order;
+            return;
+        }
+        throw new RuntimeException("order value must be descend or ascend");
     }
 }

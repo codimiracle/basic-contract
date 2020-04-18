@@ -1,4 +1,4 @@
-package com.codimiracle.web.response.contract.converter;
+package com.codimiracle.web.basic.contract;
 /*
  * MIT License
  *
@@ -22,30 +22,17 @@ package com.codimiracle.web.response.contract.converter;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+import org.junit.jupiter.api.Test;
 
-import com.codimiracle.web.response.contract.Filter;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.boot.context.properties.ConfigurationPropertiesBinding;
-import org.springframework.core.convert.converter.Converter;
-import org.springframework.stereotype.Component;
+import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * convert String to {@link Filter}
- *
- * @author codimiracle
- */
-@Component
-@ConfigurationPropertiesBinding
-public class FilterConverter implements Converter<String, Filter> {
-    @Override
-    public Filter convert(String source) {
-        ObjectMapper mapper = new ObjectMapper();
-        try {
-            return mapper.readValue(source, Filter.class);
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-            return null;
-        }
+
+class ApiResponseTest {
+    @Test
+    void testCreateApiResponse() {
+        ApiResponse apiResponse = new ApiResponse<>(101, "hello", "world");
+        assertEquals(101, apiResponse.getCode());
+        assertEquals("hello", apiResponse.getMessage());
+        assertEquals("world", apiResponse.getData());
     }
 }

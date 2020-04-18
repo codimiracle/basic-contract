@@ -1,4 +1,4 @@
-package com.codimiracle.web.response.contract;
+package com.codimiracle.web.basic.contract;
 /*
  * MIT License
  *

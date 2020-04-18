@@ -1,4 +1,4 @@
-package com.codimiracle.web.response.contract;
+package com.codimiracle.web.basic.contract;
 /*
  * MIT License
  *
@@ -22,24 +22,12 @@ package com.codimiracle.web.response.contract;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import java.util.HashMap;
 
 /**
- * represent a page of list
+ * filter record in database
+ *
+ * @author Codimiracle
  */
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class Page {
-    private int page = 1;
-    private int limit = 10;
-
-    public int getOffset() {
-        if (page < 1) {
-            page = 1;
-        }
-        return limit * (page - 1);
-    }
+public class Filter extends HashMap<String, String[]> {
 }

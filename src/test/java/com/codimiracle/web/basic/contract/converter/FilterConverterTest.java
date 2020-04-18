@@ -1,6 +1,6 @@
-package com.codimiracle.web.response.contract.converter;
+package com.codimiracle.web.basic.contract.converter;
 
-import com.codimiracle.web.response.contract.Filter;
+import com.codimiracle.web.basic.contract.Filter;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;

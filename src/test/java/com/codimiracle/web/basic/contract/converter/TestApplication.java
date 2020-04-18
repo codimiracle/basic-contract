@@ -1,4 +1,4 @@
-package com.codimiracle.web.response.contract.converter;
+package com.codimiracle.web.basic.contract.converter;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

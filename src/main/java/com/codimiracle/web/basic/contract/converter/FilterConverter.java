@@ -1,4 +1,4 @@
-package com.codimiracle.web.response.contract;
+package com.codimiracle.web.basic.contract.converter;
 /*
  * MIT License
  *
@@ -22,12 +22,30 @@ package com.codimiracle.web.response.contract;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-import java.util.HashMap;
+
+import com.codimiracle.web.basic.contract.Filter;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.boot.context.properties.ConfigurationPropertiesBinding;
+import org.springframework.core.convert.converter.Converter;
+import org.springframework.stereotype.Component;
 
 /**
- * filter record in database
+ * convert String to {@link Filter}
  *
- * @author Codimiracle
+ * @author codimiracle
  */
-public class Filter extends HashMap<String, String[]> {
+@Component
+@ConfigurationPropertiesBinding
+public class FilterConverter implements Converter<String, Filter> {
+    @Override
+    public Filter convert(String source) {
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            return mapper.readValue(source, Filter.class);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 }
