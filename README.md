@@ -2,6 +2,8 @@
 basic-contract is a simple controller reuse component.
 includes some reusable abstract for using in controller such as Page, PageSlice, Filter and Sorter.
 
+![Java CI with Maven](https://github.com/codimiracle/basic-contract/workflows/Java%20CI%20with%20Maven/badge.svg)
+
 # Feature
 Provided class as follows:
 * Page
