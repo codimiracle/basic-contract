@@ -9,6 +9,16 @@ Provided class as follows:
 * Filter
 * Sorter
 * ApiResponse
+# Install
+## Maven
+snapshot is uploaded.
+```xml
+<dependency>
+    <groupId>com.codimiracle.web</groupId>
+    <artifactId>basic-contract</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+</dependency>
+```
 # Usage
 Simply, you can use in everywhere, but those is design for spring boot controller layer. you can use those class like:
 ```java
