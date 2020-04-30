@@ -22,6 +22,7 @@ package com.codimiracle.web.basic.contract;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -61,6 +62,6 @@ public class Sorter {
             this.order = order;
             return;
         }
-        throw new RuntimeException("order value must be descend or ascend");
+        throw new RuntimeException("order value must be descend or ascend, but [" + order + "] given");
     }
 }

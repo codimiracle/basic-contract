@@ -14,10 +14,11 @@ class FilterConverterTest {
 
     @Autowired
     FilterConverter converter;
+
     @Test
     void convert() throws JsonProcessingException {
         Filter filter = new Filter();
-        filter.put("Hello", new String[] {"world"});
+        filter.put("Hello", new String[]{"world"});
         ObjectMapper mapper = new ObjectMapper();
         String value = mapper.writeValueAsString(filter);
         Filter result = converter.convert(value);
