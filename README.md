@@ -1,4 +1,7 @@
 # Backend Component
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/36a23250fb314ab89c5d36da96ab3dda)](https://app.codacy.com/manual/codimiracle/basic-contract?utm_source=github.com&utm_medium=referral&utm_content=codimiracle/basic-contract&utm_campaign=Badge_Grade_Dashboard)
+
 basic-contract is a simple controller reuse component.
 includes some reusable abstract for using in controller such as Page, PageSlice, Filter and Sorter.
 
