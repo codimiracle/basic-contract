@@ -1,6 +1,6 @@
 # Backend Component - Basic Contract
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/36a23250fb314ab89c5d36da96ab3dda)](https://app.codacy.com/manual/codimiracle/basic-contract?utm_source=github.com&utm_medium=referral&utm_content=codimiracle/basic-contract&utm_campaign=Badge_Grade_Dashboard)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ec0be628558f452baa30086fc5553c64)](https://app.codacy.com/manual/codimiracle/basic-contract?utm_source=github.com&utm_medium=referral&utm_content=codimiracle/basic-contract&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/codimiracle/basic-contract.svg?branch=master)](https://travis-ci.org/codimiracle/basic-contract)
 [![Codecov Badge](https://codecov.io/gh/codimiracle/basic-contract/badge.svg)](https://codecov.io/gh/codimiracle/basic-contract)
 	
