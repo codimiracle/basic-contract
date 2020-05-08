@@ -18,7 +18,6 @@ Provided class as follows:
   * Filter
        
        indicates how to filter database row
-       
   * Sorter
         
        sorting data for database query result
